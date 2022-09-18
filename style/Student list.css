@@ -1,0 +1,146 @@
+/* Main Heading Styling */
+.bg-3 {
+    width: 100%;
+    height: 300px;
+    background-image: url(/Photos/bg-5.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: center;
+}
+
+.main-heading1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@media only screen and (max-width:400px) {
+    .main-heading1 {
+        flex-direction: row;
+    }
+}
+
+.main-heading1 a {
+    color: rgba(255, 255, 255, .55);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.main-heading1 a:hover {
+    color: #fff;
+}
+
+.main-heading2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-heading2 h5 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Student List Styling */
+.Email {
+    width: 2rem;
+    filter: invert(1);
+}
+
+.list{
+    width: -webkit-fill-available;
+}
+
+@media only screen and (max-width:340px) {
+    .list {
+        font-size: 3vw;
+    }
+    .Email{
+        width: 1.2rem;
+    }
+}
+
+/* Footer Styling */
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 400px;
+}
+
+/* Animation */
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+}
+
+.display3{
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+.display3 li{
+    list-style: none;
+}
+
+.display3 ul a{
+    color:rgba(255, 255, 255, .55);
+    text-decoration: none;
+}
+
+.display3 ul a:hover{
+    color: #fff;
+
+}
+
+.Img-2{
+    width: 2rem;
+    filter: invert(1);
+}
+
+.bg-6{
+    background-color: #1f1f23;
+}

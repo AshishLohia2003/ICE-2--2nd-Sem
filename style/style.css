@@ -1,0 +1,300 @@
+* {
+    scroll-behavior: smooth;
+}
+
+/* Home Styling */
+.button1:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+@media only screen and (max-width:450px) {
+    .hometext {
+        display: none;
+    }
+}
+
+/* Home Pad Styling */
+.Invert img {
+    filter: invert(0.6);
+}
+
+.Invert img:hover {
+    filter: invert(1);
+}
+
+.pad {
+    color: rgba(255, 255, 255, .55);
+    text-decoration: none;
+}
+
+.pad:hover {
+    color: white;
+}
+
+/* Social Media Handles Styling */
+.bg-1 {
+    height: 630px;
+    font-size: 3vw;
+    color: #212529;
+}
+
+#div-height {
+    height: 100%;
+    --bs-gutter-x: 0;
+    margin: 0;
+}
+
+#div-height h1 {
+    margin-top: 2%;
+}
+
+.bg-1 a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.bg-1 a:hover {
+    text-decoration: underline;
+}
+
+.Groups {
+    display: grid;
+}
+
+.width-1 {
+    --bs-gutter-x: 0;
+    margin: 0;
+}
+
+/* Ice 2 Styling */
+.bg-2 {
+    padding: 2% 0%;
+    display: grid;
+    background-image: url(/Photos/bg-9.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.video {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .video {
+        height: 200px;
+    }
+}
+
+.margin1 {
+    margin: 6% 0%;
+    color: #fff;
+}
+
+.hover-1 {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hover-1:hover {
+    color: #73cee5;
+}
+
+/* Courses Styling */
+.img-height {
+    height: 300px;
+}
+
+.card-display {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#Courses {
+    color: #000;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#Courses:hover {
+    text-decoration: underline;
+}
+
+/* Teachers Styling */
+#Heading1 {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+#Heading1:hover {
+    text-decoration: underline;
+}
+
+.opac {
+    opacity: 0;
+    display: grid;
+    align-content: center
+}
+
+.opac:hover {
+    opacity: 1;
+}
+
+.img-size {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    width: 20rem;
+}
+
+.display1 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Review Styling */
+.Margin-2 {
+    margin-top: 4%;
+    margin-top: 2%;
+}
+
+.Margin-3 {
+    margin: 10% 0%;
+}
+
+#bg-3 {
+    background-image: url(/Photos/bg-7.jpg);
+    background-size: cover;
+    margin-top: 1%;
+}
+
+@media only screen and (max-width:600px) {
+    .dummy {
+        display: none;
+    }
+
+}
+
+/* Vlogs Styling */
+.display2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width:300px) {
+    .Video1 {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+/* footer */
+.bg-5 {
+    background-color: #212f3d;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 400px;
+}
+
+/* Animation */
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+}
+
+.display3 {
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+.display3 li {
+    list-style: none;
+}
+
+.display3 ul a {
+    color: rgba(255, 255, 255, .55);
+    text-decoration: none;
+}
+
+.display3 ul a:hover {
+    color: #fff;
+
+}
+
+.Img-2 {
+    width: 2rem;
+    filter: invert(1);
+}
+
+/* Transition */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
